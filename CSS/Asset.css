@@ -1,0 +1,861 @@
+ /* xxxxxxxxxxxxxxx  Font for the theme xxxxxxxxxxxxxxxxx */
+
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+ /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+ 
+ 
+ /* ===========================  Common css ============================ */
+
+ *{
+  margin :0;
+  padding :0;
+  box-sizing: border-box;
+  outline: 0;
+
+}
+
+ul,ol,li{
+    list-style: none;
+
+}
+a,span {
+    display: inline-block;
+    text-decoration: none;
+}
+img{
+    vertical-align: middle;
+
+}
+span,h1,h2,h3,h4,h5,h6,div,section,p,a,svg,button{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: var(--theme--font--Poppins--);
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+ /* ===========================  Common css ============================ */
+
+ /* xxxxxxxxxxxxx custom root files xxxxxxxxxxxxxx  */
+
+:root{
+
+    --prime--color--Blue--: #1C1E53 ;
+    --second--color--lBLue--: #F4F6FC ;
+    --3rd--color--ragular--Blue--:#2405F2 ;
+    --4th--color--llblue--: #FBFCFD ;
+    --btn--hover--color--: #FCD980 ;
+    --5th--color--bg--: #ffffff ;
+
+    --slider--color--: linear-gradient(to left top, rgb(28, 30, 83)  , rgba(28, 30, 83, 0.45))  ;
+    --boder--color--: rgba(255, 255, 255, 0.772);
+    
+    --theme--font--Poppins--: "Poppins", sans-serif;
+
+    --text--color--: #FFFFFF ;
+    --text--color--btn--: #BBBBCB ;
+    --text--color--tblack--: #282938 ;
+    --text--color--pg--: rgba(40, 41, 56, 0.616) ;
+    --text--color--litewhite--: #F4F6FC ;
+    --text--color--btn--black-- : #1B1C2B ;
+
+
+
+
+}
+
+
+
+
+ /* xxxxxxxxxxxxx custom root files xxxxxxxxxxxxxx  */
+
+ /* 00000000000000000000 cutstom Text modifacation 000000000000000000000 */
+
+ .head-title-1{
+    
+    
+    font-size: 54px;
+    line-height: 74px;
+    font-weight:600 ;
+
+ }
+ .headline-pg{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    
+ }
+
+ .head-title-2{
+     font-size: 48px;
+     font-weight: 600;
+     line-height: 64px;
+
+ }
+
+ .head-pg-2{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+
+ }
+ .headline-cardbox1-title{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 48px;
+
+ }
+.headline-cardbox1-pg{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+} 
+
+ .headline-title-4{
+
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 64px;
+
+ }
+ .headline-cardbox2-title{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+
+ }
+
+.headline-cardbox1-pg{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+} 
+
+.review--text{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 48px;
+
+}
+
+.FAQ-text{
+    font-size: 38px ;
+    font-weight: 600;
+    line-height: 56px;
+}
+
+.faq-button-text{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32px;
+   
+}
+
+ /* 00000000000000000000 cutstom Text modifacation end 000000000000000000000 */
+
+
+
+
+/* xxxxxxxxxxxxxxxxxx Button stock xxxxxxxxxxxxxxxxxxx */
+
+.custombtn{
+    padding: 16px 48px;
+    background-color: transparent;
+    border: none;
+    border: 2px solid rgba(244, 246, 252, 0.20);
+    border-radius: 41px;
+
+    color:var(--5th--color--bg--) ;
+    font-size: 16px;
+    font-weight: 500;
+
+
+
+}
+
+/* xxxxxxxxxxxxxxxxxx Button stock xxxxxxxxxxxxxxxxxxx */
+
+
+
+/* xxxxxxxxxxxxxxxxxx Nav Bar xxxxxxxxxxxxxxxxxxx */
+.customNav{
+    background-color: var(--prime--color--Blue--);
+    padding: 16px 0;
+
+}
+
+
+.customNavlistmod{
+    display: flex;
+    flex-direction: row;
+    column-gap: 15px;
+    margin-right: 95px;
+}
+
+.customNavitems{
+color: var(--text--color--btn--);
+font-size: 16px ;
+font-weight: 500;
+line-height: 32px;  
+padding: 0 !important;
+
+position: relative;
+
+}
+
+.customNavitems::after{
+    width: 0%;
+    height: 2px;
+    background-color: #FCD980;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    content:"" ;
+    transition: all linear 0.4s;
+
+}
+
+.customNavitems:hover{
+    color: var(--5th--color--bg--);
+}
+
+.customNavitems:hover::after{
+width: 100%;
+}
+
+/* xxxxxxxxxxxxxxxx custom button xxxxxxxxxxxxxxxxxx */
+
+.modifyBtnNav{
+    padding: 16px 48px;
+    background-color: transparent;
+    border: none;
+    border: 2px solid rgba(244, 246, 252, 0.20);
+    border-radius: 41px;
+
+    color:var(--5th--color--bg--) ;
+    font-size: 16px;
+    font-weight: 500;
+    position: relative;
+
+    z-index: 1;
+
+}
+.modifyBtnNav::after{
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 100%;
+    border-radius: 41px;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    background-color: var(--btn--hover--color--);
+
+    transition: all linear 0.3s;
+
+}
+
+.modifyBtnNav:hover{
+    color: var(--prime--color--Blue--);
+}
+
+
+.modifyBtnNav:hover::after{
+    width: 100%;
+
+}
+
+/* xxxxxxxxxxxxxxxxxx Nav Bar xxxxxxxxxxxxxxxxxxx */
+
+
+
+
+/* xxxxxxxxxxxxxxxx banner section xxxxxxxxxxxxxxxxx */
+#bannerPart{
+    padding: 146px ;
+    background-color: var(--prime--color--Blue--);
+
+}
+.bannerLeft{
+    padding-bottom: 48px;
+}
+.bannerLeft h1{
+    font-size: 54px;
+    font-weight: 600;
+    color: var(--5th--color--bg--);
+    line-height: 74px;
+
+}
+
+.bannerLeft p{
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--5th--color--bg--);
+    line-height: 24px;
+}
+
+
+.MODbtnforBanner{
+    margin: 0;
+    
+
+
+}
+.custom--viewPrice{
+    border: none;
+    padding-top: 18px;
+    
+    background-color: transparent;
+    border: none;
+
+    color:var(--5th--color--bg--) ;
+    font-size: 16px;
+    font-weight: 500;
+
+  
+}
+
+
+
+/* xxxxxxxxxxxxxxxx banner section end xxxxxxxxxxxxxxxxx */
+
+
+
+/* xxxxxxxxxxxxxxxx how we work section xxxxxxxxxxxxxxxxx */
+#HowWeWork{
+    padding: 128px 0;
+    background: var(--text--color--litewhite--);
+}
+
+/* <!--title part --> */
+.modifyHTT2{
+    color: var(--text--color--tblack--);
+}
+.modifyPG2{
+    color: var(--text--color--tblack--) ;
+
+}
+
+.modify--link{
+    color: var(--3rd--color--ragular--Blue--);
+    font-size: 18px;
+    font-weight: 500;
+    
+
+}
+
+
+/*  <!--cardbox part--> */
+
+.ModifacationIMG{
+    padding-bottom: 16px ;
+}
+
+.modifycardboxtitle{
+    padding-bottom: 8px;
+    color: var(--text--color--tblack--);
+}
+.modifyCardboxPG{
+    color: var(--text--color--tblack--);
+    padding-bottom: 48px;
+}
+.MOd2{
+    padding-bottom: 0px;
+}
+
+/* xxxxxxxxxxxxxxxx how we work section xxxxxxxxxxxxxxxxx */
+
+/* xxxxxxxxxxxxxxxx View Our Project section start  xxxxxxxxxxxxxxxxx */
+
+#ViewOurProject{
+    padding: 128px 0; 
+    background : var(--5th--color--bg--)
+}
+
+
+.modtitleline{
+    color: var(--text--color--tblack--);
+}
+
+.rightsidelinkstyle{
+    color: var(--text--color--tblack--);
+}
+
+/* picture hoalder */
+
+.ModifyViewLeft{
+    padding-top: 48px;
+   
+}
+
+.viewpicturholder{
+    overflow: hidden;
+    
+}
+.sideOverlay{
+    padding-top:312px ;
+    padding-bottom: 76px ;
+    padding-left: 47px ;
+
+    background: var(--slider--color--);
+    position: absolute;
+    width: 45%;
+    height: 100%;
+    left: -100%;
+    transition:all  .4s;
+   width: 45%;
+   
+
+
+/* slider work */
+
+    position: absolute;
+    
+    bottom: 0;
+}
+
+ .viewpicturholder:hover .sideOverlay{ 
+
+ left: 0%;
+}
+
+
+
+.modcolorforoverlay{
+    color: var(--5th--color--bg--);
+    padding-bottom:16px ;
+}
+.modilinkcolor{
+    color: var(--btn--hover--color--);
+    padding-top: 34px;
+}
+/* xxxxxxxxxx View Our Project section start end  xxxxxxx */
+
+.ModifyViewRight{
+    row-gap: 32px;
+}
+.ModifyViewRightP{
+overflow: hidden;
+}
+.overlayforslide{
+    width: 98%;
+    height: 100%;
+    background: var(--slider--color--);
+    padding-top: 129px;
+    padding-left: 56px;
+    padding-right: 36px;
+    padding-bottom: 45px;
+
+    position: absolute;
+    left: -100%;
+    bottom: 0;
+
+    transition:all  .4s;
+
+}
+
+
+.OverlaySlidTitle{
+    color: var(--text--color--);
+}
+
+.imageResize{
+    width: 405px ;
+    height: 284px;
+padding-left: 8px;
+}
+
+.ModifyViewRightP:hover .overlayforslide{
+    left: 0%;
+
+}
+
+/* xxxxxxxxxxxxxxxx Features section start  xxxxxxxxxxxxxxxxx */ 
+#Features{
+    background: var(--second--color--lBLue--);
+    padding: 128px 0px;
+}
+
+.Featuresinfo{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 44px;
+}
+
+.Featuresflex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+   
+    
+}
+.featurstitle1{
+    text-align: center;
+}
+
+.FeatursColorMod{
+    color: var(--text--color--tblack--);
+}
+
+.Featurescardbox{ 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 32px;
+    row-gap: 24px;
+    
+}
+.FCcardboxflex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+
+.FCardbox{
+   width:405px ;
+   height: 316px ;
+
+
+    padding: 58px 48px 48px 48px;
+    background-color: var(--5th--color--bg--) ;
+
+    border:1px solid var(--prime--color--Blue--);
+    border-radius: 10px;
+
+   
+}
+
+.FCardboxtitle{
+
+    padding-bottom: 12px;
+}
+
+.FCardboxpg{
+    color: var(--text--color--pg--);
+}
+
+
+.FCtextmodify{
+    color: var(--text--color--tblack--);
+    
+}
+
+.iconModify{
+ padding-bottom: 23px;
+ font-size: 28px;
+ color: var(--3rd--color--ragular--Blue--);
+
+}
+
+.FCardbox:hover{
+   box-shadow: var(--btn--hover--color--) 0px 5px 15px;;
+}
+
+/* xxxxxxxxxxxxxxxx Features section End    xxxxxxxxxxxxxxxxx */ 
+
+/* xxxxxxxxxxxxxxxx Clint Review start  xxxxxxxxxxxxxxxxx */
+#ClintReview{
+    background: var(--4th--color--llblue--);
+    padding: 130px 0;
+    
+}
+
+.reviewPg{
+
+    color: var(--text--color--pg--);
+}
+
+.imagemodify{
+   width: 52px;
+   height: 52px;
+   background: url(/images/jenny.png);
+   border-radius: 50px;
+}
+
+.reviewer--info{
+    padding-top:  25px;
+}
+.reviewtxtpg{
+
+    color: var(--text--color--tblack--);
+}
+.jennyinfo{
+    color: var(--text--color--tblack--);
+
+}
+.jennyinfo:hover{
+
+    color: var(--3rd--color--ragular--Blue--);
+}
+/* xxxxxxxxxxxxxxxx Clint Review End xxxxxxxxxxxxxxxxx */
+
+/* xxxxxxxxxxxxxxxx FAQ section start xxxxxxxxxxxxxxxxx */
+#FAQsec{
+    background: var(--text--color--);
+    padding: 128px 0px ;
+}
+
+.FaqlistNumber{
+    color:var(--3rd--color--ragular--Blue--);
+    padding-right: 59px;
+
+}
+.FaqlistNumberr{
+ color:var(--3rd--color--ragular--Blue--);
+ padding-right: 61px;
+
+}
+
+.accordion-body--modify{
+
+    padding-left:109px ;
+}
+
+/* xxxxxxxxxxxxxxxx FAQ section start end xxxxxxxxxxxxxxxxx */
+
+
+/* xxxxxxxxxxxxxxxx Email section start xxxxxxxxxxxxxxxxx */
+#Email{
+    padding: 128px 0px; 
+    background: var(--text--color--);
+}
+
+.emailPichoalder{
+    overflow: hidden;
+}
+.EMailoverlap{
+     padding:  96px 96px 261px 96px ; 
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px ;
+    background: var(--slider--color--);
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    
+
+    position: absolute;
+    left: 0;
+    bottom: -797px;
+    transition: all linear 0.3s;
+
+}
+
+.Emailtxtmod{
+    color: var(--5th--color--bg--);
+}
+
+.emailPichoalder:hover .EMailoverlap{
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+}
+
+
+
+/* rigth part modify  important */
+
+
+.modifyemail{
+   padding:96px 96px 48px 96px;
+   background: var(--prime--color--Blue--);
+}
+
+.emtitlemod{
+    color: var(--5th--color--bg--);
+}
+
+.Emresizer{
+    width: 432px;
+    height: 64px;
+
+}
+
+.mailbg{
+    
+    border-color: var(--boder--color--);
+    
+}
+
+.empgmod{
+    color: var(--text--color--);
+    padding-bottom: 40px;
+    
+}
+
+.emialbtn{
+
+width: 432px;
+height:64px ;
+border-radius: 50px;
+
+color: var(--text--color--tblack--);
+
+border-color:none;
+
+background: var(--btn--hover--color--);
+
+transition: all linear 0.3s;
+
+}
+
+.emialbtn:hover{
+
+background: transparent;
+border-color: var(--btn--hover--color--);
+color: var(--btn--hover--color--);
+}
+
+
+.emaigetin{
+padding-top: 28px;
+text-align: center;
+
+
+width: 432px;
+height: 30px;
+
+color: var(--text--color--);
+transition: all linear 0.3s;
+
+}
+
+.emaigetin:hover{
+
+color: var(--btn--hover--color--);
+
+}
+
+/* xxxxxxxxxxxxxxxx Email section start end xxxxxxxxxxxxxxxxx */
+
+/* xxxxxxxxxxxxxxxx Blog section start xxxxxxxxxxxxxxxxx */
+
+#Blogpart{
+
+ padding: 128px 0px; 
+ background: var(--text--color--);
+
+}
+.Blogflexing{
+
+    display: flex;
+    flex-direction: row;
+    columns: 10px;
+    flex-wrap: wrap;
+}
+
+.blogbox{
+    display: flex;
+    flex-direction:column;
+    row-gap:16px ;
+   
+}
+
+.blogtime{
+color: var(--text--color--pg--);
+
+}
+
+.blogtitle{
+    color: var(--text--color--tblack--);
+}
+.blogpg{
+    color: var(--text--color--pg--);
+}
+
+.bloglink{
+    color: var(--text--color--tblack--);
+}
+
+
+
+
+
+#Footerpart{
+    padding-top: 100px;
+    background: var(--prime--color--Blue--);
+}
+
+
+.foothernote{
+    color: var(--text--color--);
+}
+.leftsidetopfooter{
+    display: flex;
+    flex-direction: column;
+    row-gap: 22px;
+}
+
+.footercontactbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    background: var(--btn--hover--color--);
+    width:100% ;
+    height: 95px;
+}
+.FooterEmail{
+    color: var(--text--color--tblack--);
+
+}
+
+
+
+/* .RightSideFooterPart{
+
+} */
+.footerTalk{
+    display: flex;
+    flex-direction: column;
+    row-gap:45px ;
+ }
+ .footerSocial {
+     display: flex;
+     flex-direction: row;
+     column-gap: 26.67px;
+     
+}
+.ficoncolor{
+    color: var(--text--color--);
+}
+
+.FooterRightTitle{
+    width: 333px;
+    color: var(--text--color--);
+}
+
+
+/* xxxxxxxxxxxxxxxx footer section start end xxxxxxxxxxxxxxxxx */
+
+/* xxxxxxxxxxxxxxxx copyrightfooter section start xxxxxxxxxxxxxxxxx */
+#copymenu{
+    color: var(--text--color--);
+}
+.mod--color{
+
+    font-variant: var(--text--color--tblack--);
+}
+
+.navcolormod{
+    color: var(--text--color--tblack--);
+    
+}
+
+/* xxxxxxxxxxxxxxxx copyrightfooter section end xxxxxxxxxxxxxxxxx */
